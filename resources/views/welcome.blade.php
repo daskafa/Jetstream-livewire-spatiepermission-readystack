@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        @livewireStyles
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -44,7 +44,11 @@
                         </g>
                     </svg>
                 </div>
+                <div class="bg-white p-12">
+                    <livewire:counter/>
 
+                    <livewire:hello-world/>
+                </div>
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
@@ -128,5 +132,6 @@
                 </div>
             </div>
         </div>
+        @livewireScripts
     </body>
 </html>
